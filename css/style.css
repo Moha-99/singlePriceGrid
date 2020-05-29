@@ -1,7 +1,154 @@
+/* General */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+}
+
+.container {
+  display: flex;
+}
+
+.box {
+  padding: 4rem;
+}
+
+/* Community */
+.community {
+  background: #fff;
+}
+
+.community h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: hsl(179, 62%, 43%);
+}
+
+.community h3 {
+  padding-bottom: 0.5rem;
+  color: hsl(71, 73%, 54%);
+}
+
+.community p {
+  width: 50%;
+  line-height: 1.5;
+  color: gray;
+  font-weight: bold;
+  opacity: 0.8;
+}
+
+/* Subscribers */
+.subs {
+  width: 50%;
+  background-color: hsl(179, 62%, 43%);
+  color: #fff;
+}
+
+.subs h2,
+.subs h3,
+.subs p {
+  margin-bottom: 1rem;
+}
+
+.muted {
+  font-size: 1rem;
+  font-weight: lighter;
+  opacity: 0.9;
+}
+
+.subs h3 {
+  font-size: 2rem;
+}
+
+.subs h2 {
+  font-size: 1.2rem;
+}
+
+.subs button {
+  text-align: center;
+  display: block;
+  width: 100%;
+  padding: 1.3rem;
+  margin-top: 2rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: hsl(71, 73%, 54%);
+}
+
+/* Tutorials */
+.tuts {
+  width: 50%;
+  background-color: hsl(177, 60%, 51%);
+  color: #fff;
+}
+
+.tuts h3 {
+  margin-bottom: 1rem;
+}
+
+.tuts ul {
+  list-style: none;
+}
+
+.tuts ul li {
+  opacity: 0.7;
+  margin-top: 0.5rem;
+}
+
+/* Footer */
+.footer {
+  margin-top: 2rem;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/* Media Queries */
+@media (max-width: 375px) {
+  .box {
+    padding: 2rem;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .community h1 {
+    font-size: 1.5rem;
+  }
+
+  .community h3 {
+    font-size: 1rem;
+  }
+
+  .community p {
+    width: 100%;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    font-weight: normal;
+  }
+
+  .container {
+    display: inline-block;
+  }
+
+  .subs {
+    width: 100%;
+  }
+
+  .tuts {
+    width: 100%;
+  }
 }
